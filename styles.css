@@ -1,0 +1,116 @@
+h1, h2, h3 {
+    color: #150862; /* Bright accent color for headings */
+}
+
+body {
+    background-image: url('https://image.cdn2.seaart.me/2024-12-31/ctprnute878c73dqal2g-1/813ea37c0d85b04254ec18124c6dcc95_high.webp'); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    color: #e3f0f0;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #daf3f35d;
+    text-align: center;
+    padding: 50px 0;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 28px;
+    color: #100b6af9;
+    background-color: #ffffff;
+    padding: 20px 20px;
+    display: inline-block;
+    border-radius: 5px;
+}
+
+nav {
+    background-color: rgba(0, 0, 0, 0.001);
+    display: flex;
+    justify-content: space-around;
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    margin-top: 10px;
+}
+
+nav a {
+    color: #ff0000;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 0 15px;
+    background-color: #ffffff;
+    padding: 20px 20px;
+    display: inline-block;
+    border-radius: 5px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+section {
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    background: rgba(255, 255, 255, 0.234);
+    border-radius: 5px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.home img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.connect {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.connect a {
+    margin: 10px 0;
+    font-size: 18px;
+    color: #000100;
+    text-decoration: none;
+}
+
+.connect a:hover {
+    text-decoration: underline;
+}
+
+pre, code {
+    background: rgba(0, 0, 0, 0.9);
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    display: block;
+    overflow-x: auto;
+    margin: 10px 0;
+}
+
+.home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.reflection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
