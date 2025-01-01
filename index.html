@@ -4,8 +4,127 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
-    <script>
+    <style>
+        h1, h2, h3 {
+            color: #150862; /* Bright accent color for headings */
+        }
+
+        body {
+            background-image: url('https://image.cdn2.seaart.me/2024-12-31/ctprnute878c73dqal2g-1/813ea37c0d85b04254ec18124c6dcc95_high.webp'); 
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+            color: #e3f0f0;
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #daf3f35d;
+            text-align: center;
+            padding: 50px 0;
+           
+        }
+
+        header h1 {
+    margin: 0;
+    font-size: 28px;
+    color: #100b6af9; /* Keeps your current color */
+    background-color: #ffffff; /* Adds white background */
+    padding: 20px 20px; /* Adds spacing inside the background */
+    display: inline-block; /* Ensures the background wraps only the text, not the full header width */
+    border-radius: 5px; /* Optional: rounds the corners for a polished look */
+}
+        nav {
+            background-color: rgba(0, 0, 0, 0.001);
+            display: flex;
+            justify-content: space-around;
+            padding: 15px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            margin-top: 10px; /* Adds a gap between the header and navigation */
+        }
+
+        nav a {
+            color: #ff0000;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+            padding: 0 15px; /* Adds spacing between navigators */
+            background-color: #ffffff; /* Adds white background */
+    padding: 20px 20px; /* Adds spacing inside the background */
+    display: inline-block; /* Ensures the background wraps only the text, not the full header width */
+    border-radius: 5px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        section {
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 800px;
+            background: rgba(255, 255, 255, 0.234);
+            border-radius: 5px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .home img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+            
+        }
+
+        .connect {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .connect a {
+            margin: 10px 0;
+            font-size: 18px;
+            color: #000100;
+            text-decoration: none;
+        }
+
+        .connect a:hover {
+            text-decoration: underline;
+        }
+
+        pre, code {
+            background: rgba(0, 0, 0, 0.9);
+            color: #fff;
+            padding: 10px;
+            border-radius: 5px;
+            display: block;
+            overflow-x: auto;
+            margin: 10px 0;
+        }
+
+        .home {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .reflection {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+    </style>
+    
+<script>
         function showSection(sectionId) {
             // Hide all sections
             var sections = document.querySelectorAll('section');
@@ -39,23 +158,32 @@
     <p>Hi! I am a Computer Science and Engineering student with a passion for technology, problem-solving, and community service. Currently pursuing my bachelor's degree, I aspire to become a software engineer and contribute meaningfully to society.</p>
     <p>I have a strong interest in teaching underprivileged kids and actively work with NGOs to make a difference. My academic journey has been shaped by dedication, hard work, and a love for learning.</p>
 </section>
-
 <section id="reflection" style="display: none;">
     <h2>Space and Time Efficiency</h2>
     <p>Analyzing algorithm complexity ensures scalability and efficient handling of larger data. For example, bubble sort has O(n²), while merge sort has O(n log n).</p>
-    <!-- Other content -->
-</section>
 
-<section id="connect" class="connect" style="display: none;">
-    <h1>Connect with Me</h1>
-    <a href="https://github.com/YourGitHubUsername" target="_blank">GitHub</a>
-    <a href="https://www.linkedin.com/in/YourLinkedInUsername" target="_blank">LinkedIn</a>
-    <a href="mailto:yourname@example.com">Email</a>
-</section>
+   
+        <h2>Orders of Growth</h2>
+        <ul>
+            <li><strong>O(1):</strong> Constant time (e.g., array access)</li>
+            <li><strong>O(log n):</strong> Logarithmic time (e.g., binary search)</li>
+            <li><strong>O(n):</strong> Linear time (e.g., iterating through an array)</li>
+            <li><strong>O(n²):</strong> Quadratic time (e.g., bubble sort)</li>
+        </ul>
+  
 
-</body>
-</html>
-           // Output: Array A[0...n-1] sorted in ascending order
+    
+        <h2>Sorting and Searching</h2>
+
+        <h3>Sorting Algorithms</h3>
+
+        <h4>Bubble Sort:</h4>
+        <pre>
+        <code>
+        ALGORITHM BubbleSort(A[0..n-1])
+            // Sorts a given array using bubble sort
+            // Input: An array A[0..n-1] of orderable elements
+            // Output: Array A[0...n-1] sorted in ascending order
             for i <- 0 to n - 2 do
                 for j <- 0 to n - 2 - i do
                     if A[j+1] < A[j]
